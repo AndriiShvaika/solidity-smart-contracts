@@ -6,7 +6,7 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/utils/cryptography/MerkleProof.sol";
 import "hardhat/console.sol";
 
-contract MerkleVesting is Ownable {
+contract MerkleProofVesting is Ownable {
     bytes32 claimMerkleRoot;
     mapping(address => bool) addressClaim;
     IERC20 immutable _token;
